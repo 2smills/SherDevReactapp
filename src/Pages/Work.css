@@ -1,0 +1,126 @@
+.work {
+max-width: 100%;
+padding: 200px 0;
+animation: gradientColorChange 9s infinite linear;
+background: linear-gradient(-45deg, 
+                    #ffffff, 
+                    #403888, 
+                    #d0d0d0, 
+                    #403888, 
+                    #f1ebeb, 
+                    #403888, 
+                    #ffffff, 
+                    #403888, 
+                    #ffffff, 
+                    #403888, 
+                    #f8f8f8, 
+                    #403888);
+background-size: 400% 400%;
+}
+@keyframes gradientColorChange {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.work-main {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.work-main h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 66px;
+    letter-spacing: -0.03em;
+    color: #333333;
+}
+
+.work-main p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #666666;
+    margin-top: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.project {
+    margin: 30px;
+    padding: 24px; 
+    background-color: #ffffff00;
+    border: 1px solid #e0e0e000;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px; 
+    width: 100%; 
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.03);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project img:hover {
+    animation: bounce 0.5s ease infinite; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+}
+
+
+.project h4 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.project p {
+    font-size: 1rem;
+}
+
+.project:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.project:nth-child(even) {
+    background-color: #ffffff;
+}
+.back-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffffff; 
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  

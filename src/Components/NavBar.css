@@ -1,0 +1,121 @@
+.a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.a:hover {
+    text-decoration: underline;
+}
+
+.a:focus {
+    color: brown;
+}
+
+.nav-unreal {
+    background: #F6F8FE;
+    margin-bottom: 100px;
+}
+
+.nav-unreal {
+    animation: gradientChange 10s infinite alternate;
+    margin-bottom: 100px;
+    background: linear-gradient(45deg, #ffffff, #403888, #403888, #ffffff);
+
+    background-size: 200% 200%;
+}
+
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+.nav-main {
+    width: 817px;
+}
+
+.nav-other {
+    width: 132px;
+}
+
+.main-name {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    transition: color 0.3s ease-in-out;
+    
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    text-shadow: 0 0 #130a0a; 
+    animation: wavy 5s linear infinite;
+}
+
+
+@keyframes wavy {
+    0%, 100% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    }
+    10% {
+        transform: translateX(-6px) translateY(-8px) rotate(-10deg) scale(1.1);
+    }
+    20% {
+        transform: translateX(10px) translateY(6px) rotate(10deg) scale(0.9);
+    }
+    30% {
+        transform: translateX(-14px) translateY(-4px) rotate(-10deg) scale(1.2);
+    }
+    40% {
+        transform: translateX(18px) translateY(10px) rotate(10deg) scale(0.8);
+    }
+    50% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+        animation-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.8);
+    }
+    60% {
+        transform: translateX(22px) translateY(12px) rotate(10deg) scale(1.1);
+    }
+    70% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1.2);
+    }
+    80% {
+        transform: translateX(-16px) translateY(-6px) rotate(-10deg) scale(1);
+    }
+    90% {
+        transform: translateX(12px) translateY(4px) rotate(10deg) scale(1.1);
+    }
+}
+
+.other {
+    font-family: 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 41px;
+    letter-spacing: -0.01em;
+    padding: 0 50px; 
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    padding: 8px;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

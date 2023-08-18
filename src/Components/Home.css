@@ -1,0 +1,31 @@
+.home-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  background-color: #ffffff; /* Set your desired background color */
+}
+
+@keyframes fire {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  20% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  60% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  80% {
+    transform: scale(1.05) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+.animate__fire {
+  animation: fire 2s infinite;
+}

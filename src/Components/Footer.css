@@ -1,0 +1,40 @@
+.footer {
+  background: linear-gradient(45deg, #ffffff, #403888);
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.university-logo,
+.second-image {
+  width: 70px;
+  height: auto;
+  margin: 5px;
+}
+
+.footer h2 {
+  font-family: 'Times New Roman', serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-family: 'Times New Roman', serif;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.contact-me {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
